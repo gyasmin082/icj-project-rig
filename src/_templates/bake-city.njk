@@ -10,7 +10,16 @@
 <article class="container py-5">
   <div class="row g-5 align-items-center">
     <div class="col-md-5">
-      <img src="../img/{{ image }}" alt="Photo of {{ Name }}" class="img-fluid rounded shadow">
+      <figure>
+        <img src="../img/{{ image }}" alt="Photo of {{ Name }}" class="img-fluid rounded shadow">
+        {% if Name == "Austin" %}
+          <figcaption>Photo by LoneStarMike - Own work, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=10905345">source</a></figcaption>
+        {% elseif Name == "Houston" %}
+          <figcaption>Photo by Katie Haugland Brown, CC BY 2.0, <a href="https://commons.wikimedia.org/w/index.php?curid=88202578">source</a></figcaption>
+        {% elseif Name == "Dallas" %}
+          <figcaption>Photo by Michael Barera, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=42211056">source</a></figcaption>
+        {% endif %}
+      </figure>
     </div>
     <div class="col-md-7">
       <h1 class="display-4 fw-bold text-primary mb-3">{{ Name }}</h1>
