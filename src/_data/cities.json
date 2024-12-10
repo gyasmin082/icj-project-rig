@@ -1,0 +1,28 @@
+{
+  "Capitols": [
+    {
+      "Name": "Austin",
+      "Population": 1000000,
+      "State": "Texas",
+      "slug": "austin"
+    },
+    {
+      "Name": "Santa Fe",
+      "Population": 30000,
+      "State": "New Mexico",
+      "slug": "santa fe"
+    },
+    {
+      "Name": "Baton Rouge",
+      "Population": 240000,
+      "State": "Louisana",
+      "slug": "baton rouge"
+    },
+    {
+      "Name": "Dallas",
+      "Population": 300000,
+      "State": "Texas",
+      "slug": "dallas"
+    }
+  ]
+}
