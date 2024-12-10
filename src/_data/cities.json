@@ -2,27 +2,36 @@
   "Capitols": [
     {
       "Name": "Austin",
-      "Population": 1000000,
+      "BBQ": "Franklin's Barbecue",
+      "BBQ_2": "Terry Black's BBQ",
+      "BBQ_3": "Interstellar BBQ",
       "State": "Texas",
-      "slug": "austin"
+      "Visit_1": "State Capitol",
+      "Visit_2": "Bullock Texas State History Museum",
+      "slug": "austin",
+      "image": "austin.jpg"
     },
     {
-      "Name": "Santa Fe",
-      "Population": 30000,
-      "State": "New Mexico",
-      "slug": "santa fe"
-    },
-    {
-      "Name": "Baton Rouge",
-      "Population": 240000,
-      "State": "Louisana",
-      "slug": "baton rouge"
+      "Name": "Houston",
+      "BBQ": "Lonestar Sausage & BBQ",
+      "BBQ_2": "Tejas Chocolate & BBQ",
+      "BBQ_3": "CorkScrew BBQ",
+      "State": "Texas",
+      "Visit_1": "Houston Rodeo",
+      "Visit_2": "Astros Baseball Team Stadium",
+      "slug": "houston",
+      "image": "houston.jpg"
     },
     {
       "Name": "Dallas",
-      "Population": 300000,
+      "BBQ": "Cattleack Barbeque",
+      "BBQ_2": "OAK'D BBQ",
+      "BBQ_3": "The Slow Bone",
       "State": "Texas",
-      "slug": "dallas"
+      "Visit_1": "Texas State Fair",
+      "Visit_2": "Dallas Cowboys Football Team Stadium",
+      "slug": "dallas",
+      "image": "dallas.jpg"
     }
   ]
 }

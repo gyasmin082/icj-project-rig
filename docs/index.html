@@ -1,85 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <!-- A Intro to Coding for Journalists class project -->
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <title>Capitols of the U.S.</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Explore Texas</title>
+    <meta name="description" content="Discover the best cities in Texas, their BBQ spots, and popular attractions.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Capitols of the U.S.</h1>
-      <div id="cities-list">
-        <!-- Cities will be loaded here dynamically -->
-      </div>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            City Names
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            
+            <li><a class="dropdown-item" href="cities/austin.html">Austin</a></li>
+            
+            <li><a class="dropdown-item" href="cities/houston.html">Houston</a></li>
+            
+            <li><a class="dropdown-item" href="cities/dallas.html">Dallas</a></li>
+            
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <script>
-      // Sample JSON data
-      const capitolsData = {
-        "Capitols": [
-          {
-            "Name": "Austin",
-            "Population": 1000000,
-            "State": "Texas",
-            "slug": "austin"
-          },
-          {
-            "Name": "Santa Fe",
-            "Population": 30000,
-            "State": "New Mexico",
-            "slug": "santa fe"
-          },
-          {
-            "Name": "Baton Rouge",
-            "Population": 240000,
-            "State": "Louisiana",
-            "slug": "baton rouge"
-          },
-          {
-            "Name": "Dallas",
-            "Population": 300000,
-            "State": "Texas",
-            "slug": "dallas"
-          }
-        ]
-      };
+    
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 text-primary fw-bold">Explore Texas</h1>
+    <p class="lead text-muted">Welcome to Texas! Explore some of our best cities and enjoy their rich culture and flavors.</p>
+  </div>
 
-      // Function to create HTML content for each city
-      function displayCities() {
-        const citiesList = document.getElementById("cities-list");
-        const cities = capitolsData.Capitols;
+  <section>
+    <h2 class="text-secondary mb-4">Cities to Visit</h2>
+    <p class="mb-4">Within our guides, you’ll find the best BBQ spots and popular attractions in each major city.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/austin.jpg" alt="Photo of Austin" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-primary h5">
+                <a href="cities/austin.html" class="stretched-link text-decoration-none text-primary">Austin</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/houston.jpg" alt="Photo of Houston" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-primary h5">
+                <a href="cities/houston.html" class="stretched-link text-decoration-none text-primary">Houston</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="img/dallas.jpg" alt="Photo of Dallas" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-title text-primary h5">
+                <a href="cities/dallas.html" class="stretched-link text-decoration-none text-primary">Dallas</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+</div>
 
-        cities.forEach(city => {
-          const cityDiv = document.createElement("div");
-          cityDiv.classList.add("city");
 
-          // Create city name, population, and state
-          const cityName = document.createElement("h3");
-          cityName.textContent = `${city.Name} (${city.State})`;
-          const cityPopulation = document.createElement("p");
-          cityPopulation.textContent = `Population: ${city.Population}`;
-          const cityLink = document.createElement("a");
-          cityLink.href = `cities/${city.slug}.html`;
-          cityLink.textContent = "Learn More";
+    <footer>
+<p id="legal" class="center-block text-center">
+  <small>&copy;</small> <span class="copyright-year"></span>
+  A class project by Yasmin Garcia.
+</p>
+</footer>
 
-          // Append the elements to the city div
-          cityDiv.appendChild(cityName);
-          cityDiv.appendChild(cityPopulation);
-          cityDiv.appendChild(cityLink);
 
-          // Add the city div to the cities list
-          citiesList.appendChild(cityDiv);
-        });
-      }
-
-      // Call the function to display cities when the page loads
-      displayCities();
-    </script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

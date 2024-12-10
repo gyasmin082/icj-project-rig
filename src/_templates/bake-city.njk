@@ -1,0 +1,38 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ Name }}{% endblock %}
+
+{% block page_description %}Explore {{ Name }} in {{ State }}{% endblock %}
+
+{% block content %}
+<article class="container py-5">
+  <div class="row g-5 align-items-center">
+    <div class="col-md-5">
+      <img src="../img/{{ image }}" alt="Photo of {{ Name }}" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-7">
+      <h1 class="display-4 fw-bold text-primary mb-3">{{ Name }}</h1>
+      <p class="lead text-muted mb-4">Discover the best BBQ spots and attractions in {{ Name }}, {{ State }}.</p>
+
+      <div class="mb-4">
+        <h2 class="text-secondary">Top BBQ Spots</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>1:</strong> {{ BBQ }}</li>
+          <li class="list-group-item"><strong>2:</strong> {{ BBQ_2 }}</li>
+          <li class="list-group-item"><strong>3:</strong> {{ BBQ_3 }}</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-secondary">Places to Visit</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Must-See:</strong> {{ Visit_1 }}</li>
+          <li class="list-group-item"><strong>Explore:</strong> {{ Visit_2 }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+{% endblock %}

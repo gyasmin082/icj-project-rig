@@ -4,20 +4,15 @@
       "fileId": "1oPNy_kcxzpeZwMNo7GUN7bJiOclfXuW-9tJ2tmp6LfM",
       "type": "sheet",
       "name": "cities"
-    },
-    {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
     }
   ],
   "to_bake": [
     {
-      "template": "bake-book",
+      "template": "bake-city",
       "data": "cities",
       "array": "Capitols",
       "slug": "slug",
-      "path": "Capitols"
+      "path": "cities"
     }
   ]
 }
